@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>DSC PRO1</title>
+    <link rel="shortcut icon" type="ico" href="favicon.ico"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="animate.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto|Krub|ABeeZee|Comfortaa|Andika');
+        @import url('https://fonts.googleapis.com/css?family=Andada|Permanent+Marker|Raleway:300');
+        * {
+            box-sizing: border-box;
+        }
+          html {
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                -webkit-tap-highlight-color: transparent;
+            min-height: 100%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background: -webkit-linear-gradient(to top,#004e92, #000428);
+            background: linear-gradient(to top,#004e92, #000428);
+            background-repeat:no-repeat;
+            background: -webkit-linear-gradient( to top,#004e92, #000428);
+            background: -moz-linear-gradient( to top,#004e92, #000428);
+            background: -ms-linear-gradient( to top,#004e92, #000428);
+            background: -o-linear-gradient( to top,#004e92, #000428);
+            background: linear-gradient( to top,#004e92, #000428);
+        }
+        body {
+            /*background-attachment: fixed;*/
+            margin : 0px;
+            height : 100%;
+            text-align: center;
+            /*background-color: #232840;*/
+            /*background: #000428;  !* fallback for old browsers *!*/
+            /*background: -webkit-linear-gradient(to right,#004e92, #000428);  !* Chrome 10-25, Safari 5.1-6 *!*/
+            /*background: linear-gradient(to right,#004e92, #000428); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+            /*background: #F0F2F0;  !* fallback for old browsers *!*/
+            /*background: -webkit-linear-gradient( #000C40, #F0F2F0);  !* Chrome 10-25, Safari 5.1-6 *!*/
+            /*background: linear-gradient( #000C40, #F0F2F0); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+            /*background: #9CECFB;  !* fallback for old browsers *!*/
+            /*background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  !* Chrome 10-25, Safari 5.1-6 *!*/
+            /*background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+            /*background: #4CA1AF;  !* fallback for old browsers *!*/
+            /*background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  !* Chrome 10-25, Safari 5.1-6 *!*/
+            /*background: linear-gradient(to right, #C4E0E5, #4CA1AF); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+
+
+            position: relative;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+        }
+button {
+            box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+            background:#00417F; /*#004e92;*/
+            padding: 15px 40px;
+            width:170px;
+            display: inline-block;
+            border-radius: 30px;
+            margin-top: 7px;
+            /*background-color: transparent;*/
+            outline: none;
+            border: 0px;
+            color: #fff;
+            cursor: pointer;
+        }              
+button, button:focus{
+    curser: pointer;
+}
+#q{
+    padding: 0 50px 0 50px;
+    margin-top: 150px;
+    margin-bottom: 40px; 
+}
+#t{
+    margin-top: 150px;
+}
+.button{
+    padding: 20px;
+    width: 300px;
+    border-radius: 40px;
+    font-size: 25px;
+    margin-top: 60px;
+
+}
+#Header {
+
+    margin-top: 50px;
+    text-align: center;
+    font-size: 60px;
+    color: rgba(250,250,250,1);
+
+
+
+
+    font-family: 'Comfortaa', cursive;
+    /*margin-top: 0px;*/
+    /*text-align: center;*/
+    font-size: 60px;
+    color: rgba(250,250,250,1);
+    cursor: pointer;
+    /*padding-top: 5px;*/
+    /*text-align: center;*/
+    /*float: right;*/
+
+    /*margin-right: 41%;*/
+    margin-bottom: 5%;
+    text-align: center;
+    /*padding-top: 5px;
+    /*padding-bottom: 5px;*/
+    /*background: #00c4cc linear-gradient(139deg, #00c4cc 0, #7d2ae8 100%);*/
+    /*background-color: red;*/
+}
+/*#Header {*/
+/*margin-top: 50px;*/
+/*text-align: center;*/
+/*font-size: 30px;*/
+/*color: rgba(250,250,250,1);*/
+/*font-family: 'Comfortaa', cursive;*/
+/*cursor: pointer;*/
+/*!*background: #00c4cc linear-gradient(139deg, #00c4cc 0, #7d2ae8 100%);*!*/
+/*}*/
+#box {
+    width:50%;
+    height:50%;
+    margin:0 auto;
+    padding-top: 0;
+    border-radius: 100px;
+    text-align: center;
+}
+button {
+    padding-top:0;
+    background:#00417F; /*#004e92;*/
+    outline: none;
+    border: 0px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+    height:100%;
+}
+
+
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("body").delay("slow").fadeIn();
+        })
+    </script>
+
+
+    <script type="text/javascript">
+        var app=angular.module("app",[]);
+        app.controller("emp",['$scope',function($scope){
+            $scope.quote='{{quote}}';            
+        }]);
+    </script>
+</head>
+
+
+
+<body ng-app="app" ng-controller="emp">
+<h1>Trummy Quotes</h1>>
+<p id = "q" style="font-size: 50px;">fetch random Trump quotes</p>
+{{quote}}
+<form  id = "t" method="get" action="/quote" >
+    <button class="button" style="color:cyan" type="submit">Display Quotes</button>
+</form>
+
+
+</body>
+</html>
