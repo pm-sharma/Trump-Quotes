@@ -57,12 +57,7 @@
             background: -o-linear-gradient( to top,#004e92, #000428);
             background: linear-gradient( to top,#004e92, #000428);
         }
-        h1 {
-            display: inline;
-        }
         body {
-            position: relative;
-            background-attachment: fixed;
             margin: 0;
             font-family: 'Roboto', sans-serif;
             color: #fff;
@@ -159,8 +154,8 @@ button, button:focus{
 <body>
 <div ng-app="app">
 
-<h1 style="text-align:center;margin-top:2%;">Trummy</h1>
-<p id = "q" style="font-size: 50px;text-align:center">fetch random Trump quotes</p>
+<h1 style="text-align:center;margin-top:2%;">Trummy Quotes</h1>
+<p id = "q" style="font-size: 50px;text-align:center">Fetch random Trump quotes</p>
 <form  id = "t" method="get" action="/quote" >
     <button class="button" style="color:cyan" type="submit">Display Quotes</button>
 </form>
