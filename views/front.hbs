@@ -35,11 +35,6 @@
             transition: background-color 5000s ease-in-out 0s;
             -webkit-text-fill-color: #fff;
         }
-
-
-
-
-
          html {
                 -webkit-tap-highlight-color: rgba(0,0,0,0);
                 -webkit-tap-highlight-color: transparent;
@@ -57,7 +52,12 @@
             background: -o-linear-gradient( to top,#004e92, #000428);
             background: linear-gradient( to top,#004e92, #000428);
         }
+        /*h1 {*/
+            /*display: inline;*/
+        /*}*/
         body {
+            position: relative;
+            background-attachment: fixed;
             margin: 0;
             font-family: 'Roboto', sans-serif;
             color: #fff;
@@ -74,14 +74,8 @@
             outline: none;
             border: 0px;
             color: #fff;
+            margin-left:40%;
             cursor: pointer;
-        }
-                #form {
-
-            margin-right: 400px;
-            text-align: center;
-            width : 600px;
-            /*padding-left: 100px;*/
         }
 
        
@@ -102,23 +96,18 @@ button, button:focus{
     border-radius: 40px;
     font-size: 25px;
     margin-top: 60px;
-
 }
 </style>
-
 <script type="text/javascript">
 </script>
-
 </head>
 <body>
 <div ng-app="app">
-
-<h1 style="text-align:center;margin-top:2%;">Trummy Quotes</h1>
-<p id = "q" style="font-size: 50px;text-align:center">Fetch random Trump quotes</p>
+<h1 style="text-align:center; margin-top:2%;">Trump Quotes</h1>
+<p id = "q" style="font-size: 50px;text-align: center">fetch random Trump quotes</p>
 <form  id = "t" method="get" action="/quote" >
-    <button class="button" style="color:cyan;align:center;" type="submit">Display Quotes</button>
+    <button class="button" style="color:cyan" type="submit">Display Quotes</button>
 </form>
-    
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 </body>
 </html>
